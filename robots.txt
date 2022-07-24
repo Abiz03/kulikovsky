@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /error404.html
+Allow: /
+
+Sitemap: https://kulikovskiy.uz/sitemap.xml
