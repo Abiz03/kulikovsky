@@ -1489,6 +1489,9 @@ footer {
 .location-popup.active {
   display: flex;
 }
+.location-popup.active body {
+  overflow: hidden;
+}
 /* .location-popup__content {
   position: relative;
 } */

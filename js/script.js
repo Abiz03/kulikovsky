@@ -78,13 +78,16 @@ const popupLoc = document.querySelector('.location-popup')
 const popupClose = document.querySelector('.location-popup_close')
 const maps = document.querySelector('.maps')
 maps.style.display = "none"
+document.body.style.overflow = 'hidden'
 popupClose.addEventListener('click', ()=> {
     popupLoc.classList.remove('active')
     maps.style.display = "block"
+    document.body.removeAttribute('style')
 })
 maps.addEventListener('click', ()=> {
     popupLoc.classList.add('active')
     maps.style.display = "none"
+    document.body.style.overflow = 'hidden'
 })
 
 
