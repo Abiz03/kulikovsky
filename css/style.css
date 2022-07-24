@@ -1536,5 +1536,16 @@ footer {
   }
 }
 
-
+.maps {
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  z-index: 30;
+  background: none;
+  border: none;
+  outline: none;
+  mix-blend-mode: multiply;
+  cursor: pointer;
+  transition: 0.3s;
+}
 /*# sourceMappingURL=style.css.map */
