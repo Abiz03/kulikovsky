@@ -77,8 +77,8 @@ burgerIcon.classList.remove("active")
 const popupLoc = document.querySelector('.location-popup') 
 const popupClose = document.querySelector('.location-popup_close')
 const maps = document.querySelector('.maps')
-maps.style.display = "none"
-document.body.style.overflow = 'hidden'
+// maps.style.display = "none"
+// document.body.style.overflow = 'hidden'
 popupClose.addEventListener('click', ()=> {
     popupLoc.classList.remove('active')
     maps.style.display = "block"

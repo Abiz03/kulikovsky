@@ -1492,9 +1492,7 @@ footer {
 .location-popup.active body {
   overflow: hidden;
 }
-/* .location-popup__content {
-  position: relative;
-} */
+
 .location-popup_close {
   position: absolute;
   top: 30px;
@@ -1528,11 +1526,14 @@ footer {
     top: 15px;
     right: 15px;
   }
+  .location-popup__content .location {
+    height: 350px;
+    overflow: auto;
+  }
 }
 @media (max-width: 992px) {
   .location__content {
     grid-template-columns: repeat(1, 1fr);
-    
   }
 }
 @media (max-width: 480px) {
@@ -1540,9 +1541,12 @@ footer {
     font-size: 20px;
     right: 10px;
   }
+  
 }
 
 .maps {
+  width: 100px;
+  height: 100px;
   position: fixed;
   left: 30px;
   bottom: 30px;
@@ -1554,20 +1558,37 @@ footer {
   cursor: pointer;
   transition: 0.3s;
 }
+.maps__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 .maps-bg {
   width: 35px;
   height: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .maps-circle1 {
-  width: 90px;
-  height: 90px;
-  top: 8%;
-  left: 7%;
+  width: 100%;
+  height: 100%;
+  animation: rotate-circle 2s linear infinite;
 }
 .maps-circle2 {
-  width: 50px;
-  height: 50px;
-  top: 25%;
-  left: 26%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  animation: rotate-circle 2s linear infinite;
+}
+@media (max-width: 480px) {
+  .maps {
+    left: 15px;
+    bottom: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
