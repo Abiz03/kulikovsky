@@ -1527,8 +1527,11 @@ footer {
     right: 15px;
   }
   .location-popup__content .location {
-    height: 350px;
+    height: 450px;
     overflow: auto;
+  }
+  .location-popup__content .location::-webkit-scrollbar {
+    display: none;
   }
 }
 @media (max-width: 992px) {
